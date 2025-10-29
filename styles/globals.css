@@ -1,56 +1,266 @@
-/* --- Base oscuro --- */
-:root{--green:#0c8b57;--bg:#000;--card:#0b0b0b;--muted:#9aa7a0;--border:#151515;--text:#e9efe9}
-body{margin:0;background:var(--bg);color:var(--text);font-family:ui-sans-serif,system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,Cantarell,Noto Sans,Arial}
-.container{max-width:1180px;margin:0 auto;padding:0 16px}
-.header{position:sticky;top:0;z-index:50;background:#000;border-bottom:1px solid var(--border)}
+/* ===============================
+   ELITE DIGITAL - ESTILO GLOBAL
+   Fondo estilo cine (negro con azul)
+   =============================== */
 
-/* Franja superior + título Elite Digital */
-.topbar{font-size:13px;color:#aab7b0;text-align:center;padding:8px 0;border-bottom:1px solid var(--border)}
-.hero-title{display:grid;place-items:center;padding:14px 0;border-bottom:1px solid var(--border)}
-.brand-gradient{
-  font-size:38px;margin:0;font-weight:900;letter-spacing:.5px;
-  background: linear-gradient(90deg,#0fa95a,#ffd700 60%,#0a6b43);
-  -webkit-background-clip:text; -webkit-text-fill-color:transparent;
+:root {
+  --green: #00ff7f;
+  --bg: #0a0f14;
+  --card: #0f0f0f;
+  --muted: #9aa7a0;
+  --border: #151515;
+  --text: #e9efe9;
 }
 
-/* Header nav */
-.header-in{display:flex;align-items:center;justify-content:space-between;padding:10px 0;gap:12px}
-.menu{display:flex;align-items:center;gap:8px}
-.btn{display:inline-flex;align-items:center;gap:8px;padding:10px 12px;border:1px solid var(--border);border-radius:10px;background:#0e0e0e;color:#dfeee7;cursor:pointer}
-.btn:hover{border-color:#2a2a2a}
-.btn.primary{background:var(--green);border-color:transparent;color:#fff;font-weight:800}
+/* ======== Fondo general ======== */
+body {
+  margin: 0;
+  background-color: var(--bg); /* Fondo cinematográfico oscuro */
+  color: var(--text);
+  font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, Noto Sans, Arial;
+}
 
-/* Drawer categorías */
-.drawer{position:fixed;inset:0;z-index:70;display:none}
-.drawer.open{display:block}
-.backdrop{position:absolute;inset:0;background:#0008}
-.panel{position:absolute;left:0;top:0;bottom:0;width:290px;background:#0a0a0a;border-right:1px solid var(--border);padding:14px;overflow:auto}
-.cat{display:block;padding:8px 10px;border-radius:8px;border:1px solid var(--border);margin-bottom:8px;color:#dfeee7}
-.cat:hover{background:#101010}
+/* ======== Contenedor base ======== */
+.container {
+  max-width: 1180px;
+  margin: 0 auto;
+  padding: 0 16px;
+}
 
-/* Slider banner grande (manual) */
-.slider{position:relative;overflow:hidden;border:1px solid var(--border);border-radius:16px}
-.track{display:flex;transition:transform .6s ease}
-.slide{min-width:100%;height:240px;background:#0f0f0f;display:grid;place-items:center;color:#95a39b}
-.controls{position:absolute;inset:0;display:flex;align-items:center;justify-content:space-between;padding:0 8px}
-.ctrl{background:#000c;border:1px solid #222;padding:8px;border-radius:999px;cursor:pointer}
-.dots{position:absolute;bottom:8px;left:0;right:0;display:flex;gap:6px;justify-content:center}
-.dot{width:8px;height:8px;border-radius:999px;background:#2a2a2a;border:1px solid #3a3a3a}
-.dot.active{background:var(--green);border-color:transparent}
+/* ======== Header ======== */
+.header {
+  position: sticky;
+  top: 0;
+  z-index: 50;
+  background: #000;
+  border-bottom: 1px solid var(--border);
+}
 
-/* Mini-banners automáticos (loop) */
-.mini-wrap{overflow:hidden;border:1px solid var(--border);border-radius:16px;background:#0b0b0b}
-.mini-track{display:flex;gap:12px;padding:10px;animation:miniLoop 16s linear infinite}
-.mini-card{flex:0 0 30%;height:80px;border:1px solid var(--border);border-radius:12px;background:#0f0f0f;display:grid;place-items:center}
-.mini-card img{max-width:70%;max-height:60%}
-@keyframes miniLoop{0%{transform:translateX(0)}100%{transform:translateX(-50%)}}
+.topbar {
+  font-size: 13px;
+  color: #aab7b0;
+  text-align: center;
+  padding: 8px 0;
+  border-bottom: 1px solid var(--border);
+}
 
-/* Grilla de productos */
-.section{padding:14px 0}
-h2.sec{font-size:15px;letter-spacing:.6px;color:#cfe7dc;margin:6px 0 12px}
-.grid{display:grid;grid-template-columns:repeat(2,1fr);gap:12px}
-@media(min-width:860px){.grid{grid-template-columns:repeat(6,1fr)}}
-.card{border:1px solid var(--border);background:var(--card);border-radius:14px;overflow:hidden}
-.card img{width:100%;height:160px;object-fit:cover}
-.card-body{padding:10px}
-.catalog-cta{display:flex;justify-content:center;margin-top:12px}
+.hero-title {
+  display: grid;
+  place-items: center;
+  padding: 14px 0;
+  border-bottom: 1px solid var(--border);
+}
+
+.brand-gradient {
+  font-size: 38px;
+  margin: 0;
+  font-weight: 900;
+  letter-spacing: 0.5px;
+  background: linear-gradient(90deg, #0fa95a, #ffd700 60%, #0a6b43);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* ======== Navegación ======== */
+.header-in {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 0;
+  gap: 12px;
+}
+
+.menu {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 12px;
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  background: #0e0e0e;
+  color: #dfeee7;
+  cursor: pointer;
+}
+.btn:hover {
+  border-color: #2a2a2a;
+}
+.btn.primary {
+  background: var(--green);
+  border-color: transparent;
+  color: #000;
+  font-weight: 800;
+}
+
+/* ======== Drawer categorías ======== */
+.drawer {
+  position: fixed;
+  inset: 0;
+  z-index: 70;
+  display: none;
+}
+.drawer.open {
+  display: block;
+}
+.backdrop {
+  position: absolute;
+  inset: 0;
+  background: #0008;
+}
+.panel {
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 290px;
+  background: #0a0a0a;
+  border-right: 1px solid var(--border);
+  padding: 14px;
+  overflow: auto;
+}
+.cat {
+  display: block;
+  padding: 8px 10px;
+  border-radius: 8px;
+  border: 1px solid var(--border);
+  margin-bottom: 8px;
+  color: #dfeee7;
+}
+.cat:hover {
+  background: #101010;
+}
+
+/* ======== Slider banners ======== */
+.slider {
+  position: relative;
+  overflow: hidden;
+  border: 1px solid var(--border);
+  border-radius: 16px;
+}
+.track {
+  display: flex;
+  transition: transform 0.6s ease;
+}
+.slide {
+  min-width: 100%;
+  height: 240px;
+  background: #0f0f0f;
+  display: grid;
+  place-items: center;
+  color: #95a39b;
+}
+.controls {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 8px;
+}
+.ctrl {
+  background: #000c;
+  border: 1px solid #222;
+  padding: 8px;
+  border-radius: 999px;
+  cursor: pointer;
+}
+.dots {
+  position: absolute;
+  bottom: 8px;
+  left: 0;
+  right: 0;
+  display: flex;
+  gap: 6px;
+  justify-content: center;
+}
+.dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 999px;
+  background: #2a2a2a;
+  border: 1px solid #3a3a3a;
+}
+.dot.active {
+  background: var(--green);
+  border-color: transparent;
+}
+
+/* ======== Mini-banners ======== */
+.mini-wrap {
+  overflow: hidden;
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  background: #0b0b0b;
+}
+.mini-track {
+  display: flex;
+  gap: 12px;
+  padding: 10px;
+  animation: miniLoop 16s linear infinite;
+}
+.mini-card {
+  flex: 0 0 30%;
+  height: 80px;
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  background: #0f0f0f;
+  display: grid;
+  place-items: center;
+}
+.mini-card img {
+  max-width: 70%;
+  max-height: 60%;
+}
+@keyframes miniLoop {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+/* ======== Productos ======== */
+.section {
+  padding: 14px 0;
+}
+h2.sec {
+  font-size: 15px;
+  letter-spacing: 0.6px;
+  color: #cfe7dc;
+  margin: 6px 0 12px;
+}
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 12px;
+}
+@media (min-width: 860px) {
+  .grid {
+    grid-template-columns: repeat(6, 1fr);
+  }
+}
+.card {
+  border: 1px solid var(--border);
+  background: var(--card);
+  border-radius: 14px;
+  overflow: hidden;
+}
+.card img {
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+}
+.card-body {
+  padding: 10px;
+}
+.catalog-cta {
+  display: flex;
+  justify-content: center;
+  margin-top: 12px;
+}
