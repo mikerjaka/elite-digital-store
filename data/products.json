@@ -1,200 +1,23 @@
 [
   {
-    "id": "p1",
-    "slug": "producto-1",
-    "title": "Producto destacado 1",
-    "category": "Streaming y Entretenimiento",
-    "price": 20.9,
-    "oldPrice": 30.9,
-    "stock": 99,
-    "featured": true,
-    "cover": "https://picsum.photos/seed/ed1/640/400"
-  },
-  {
-    "id": "p2",
-    "slug": "producto-2",
-    "title": "Producto destacado 2",
-    "category": "Inteligencia Artificial",
-    "price": 21.9,
-    "oldPrice": 31.9,
-    "stock": 98,
-    "featured": true,
-    "cover": "https://picsum.photos/seed/ed2/640/400"
-  },
-  {
-    "id": "p3",
-    "slug": "producto-3",
-    "title": "Producto destacado 3",
-    "category": "Edición y Creatividad",
-    "price": 22.9,
-    "oldPrice": 32.9,
-    "stock": 97,
-    "featured": true,
-    "cover": "https://picsum.photos/seed/ed3/640/400"
-  },
-  {
-    "id": "p4",
-    "slug": "producto-4",
-    "title": "Producto destacado 4",
-    "category": "Fitness y Bienestar",
-    "price": 23.9,
-    "oldPrice": 33.9,
-    "stock": 96,
-    "featured": true,
-    "cover": "https://picsum.photos/seed/ed4/640/400"
-  },
-  {
-    "id": "p5",
-    "slug": "producto-5",
-    "title": "Producto destacado 5",
-    "category": "Métodos y Paneles",
-    "price": 24.9,
-    "oldPrice": 34.9,
-    "stock": 95,
-    "featured": true,
-    "cover": "https://picsum.photos/seed/ed5/640/400"
-  },
-  {
-    "id": "p6",
-    "slug": "producto-6",
-    "title": "Producto destacado 6",
-    "category": "Redes y Visibilidad",
+    "id": 1,
+    "name": "Netflix Premium 4K",
     "price": 25.9,
-    "oldPrice": 35.9,
-    "stock": 94,
     "featured": true,
-    "cover": "https://picsum.photos/seed/ed6/640/400"
+    "image": "/netflix.jpg"
   },
   {
-    "id": "p7",
-    "slug": "producto-7",
-    "title": "Producto destacado 7",
-    "category": "Ciberseguridad",
-    "price": 26.9,
-    "oldPrice": 36.9,
-    "stock": 93,
+    "id": 2,
+    "name": "Disney+ 4K",
+    "price": 22.9,
     "featured": true,
-    "cover": "https://picsum.photos/seed/ed7/640/400"
+    "image": "/disney.jpg"
   },
   {
-    "id": "p8",
-    "slug": "producto-8",
-    "title": "Producto destacado 8",
-    "category": "Doxeos e Investigación",
-    "price": 27.9,
-    "oldPrice": 37.9,
-    "stock": 92,
+    "id": 3,
+    "name": "Prime Video UHD",
+    "price": 24.9,
     "featured": true,
-    "cover": "https://picsum.photos/seed/ed8/640/400"
-  },
-  {
-    "id": "p9",
-    "slug": "producto-9",
-    "title": "Producto destacado 9",
-    "category": "Multimedia",
-    "price": 28.9,
-    "oldPrice": 38.9,
-    "stock": 91,
-    "featured": true,
-    "cover": "https://picsum.photos/seed/ed9/640/400"
-  },
-  {
-    "id": "p10",
-    "slug": "producto-10",
-    "title": "Producto destacado 10",
-    "category": "Cursos",
-    "price": 29.9,
-    "oldPrice": 39.9,
-    "stock": 90,
-    "featured": true,
-    "cover": "https://picsum.photos/seed/ed10/640/400"
-  },
-  {
-    "id": "p11",
-    "slug": "producto-11",
-    "title": "Producto destacado 11",
-    "category": "Packs y Combos",
-    "price": 30.9,
-    "oldPrice": 40.9,
-    "stock": 89,
-    "featured": true,
-    "cover": "https://picsum.photos/seed/ed11/640/400"
-  },
-  {
-    "id": "p12",
-    "slug": "producto-12",
-    "title": "Producto destacado 12",
-    "category": "Streaming y Entretenimiento",
-    "price": 31.9,
-    "oldPrice": 41.9,
-    "stock": 88,
-    "featured": true,
-    "cover": "https://picsum.photos/seed/ed12/640/400"
-  },
-  {
-    "id": "p13",
-    "slug": "producto-13",
-    "title": "Producto destacado 13",
-    "category": "Inteligencia Artificial",
-    "price": 32.9,
-    "oldPrice": 42.9,
-    "stock": 87,
-    "featured": true,
-    "cover": "https://picsum.photos/seed/ed13/640/400"
-  },
-  {
-    "id": "p14",
-    "slug": "producto-14",
-    "title": "Producto destacado 14",
-    "category": "Edición y Creatividad",
-    "price": 33.9,
-    "oldPrice": 43.9,
-    "stock": 86,
-    "featured": true,
-    "cover": "https://picsum.photos/seed/ed14/640/400"
-  },
-  {
-    "id": "p15",
-    "slug": "producto-15",
-    "title": "Producto destacado 15",
-    "category": "Fitness y Bienestar",
-    "price": 34.9,
-    "oldPrice": 44.9,
-    "stock": 85,
-    "featured": true,
-    "cover": "https://picsum.photos/seed/ed15/640/400"
-  },
-  {
-    "id": "p16",
-    "slug": "producto-16",
-    "title": "Producto destacado 16",
-    "category": "Métodos y Paneles",
-    "price": 35.9,
-    "oldPrice": 45.9,
-    "stock": 84,
-    "featured": true,
-    "cover": "https://picsum.photos/seed/ed16/640/400"
-  },
-  {
-    "id": "p17",
-    "slug": "producto-17",
-    "title": "Producto destacado 17",
-    "category": "Redes y Visibilidad",
-    "price": 36.9,
-    "oldPrice": 46.9,
-    "stock": 83,
-    "featured": true,
-    "cover": "https://picsum.photos/seed/ed17/640/400"
-  },
-  {
-    "id": "p18",
-    "slug": "producto-18",
-    "title": "Producto destacado 18",
-    "category": "Ciberseguridad",
-    "price": 37.9,
-    "oldPrice": 47.9,
-    "stock": 82,
-    "featured": true,
-    "cover": "https://picsum.photos/seed/ed18/640/400"
+    "image": "/prime.jpg"
   }
 ]
