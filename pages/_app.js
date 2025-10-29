@@ -1,9 +1,17 @@
-import '../styles/globals.css'
-import Head from 'next/head'
+
+import "../styles/globals.css"
+import Head from "next/head"
+
 export default function App({Component, pageProps}){
   return (<>
-    <Head><title>Elite Digital – Tienda Oficial</title><link rel="icon" href="/favicon.svg"/></Head>
+    <Head>
+      <title>Elite Digital – Tienda</title>
+      <meta name="theme-color" content="#000000"/>
+      <link rel="icon" href="/favicon.svg"/>
+    </Head>
     <Component {...pageProps}/>
-    <a className="whatsapp-fab" href="https://wa.me/51946335004" target="_blank" rel="noreferrer" style={{position:'fixed',right:16,bottom:16,width:56,height:56,borderRadius:999,background:'#25d366',display:'grid',placeItems:'center',color:'#042b13'}}>W</a>
+    <a className="whatsapp" href="https://wa.me/51946335004?text=Hola%20👋,%20quiero%20comprar%20desde%20Elite%20Digital" target="_blank" rel="noreferrer" aria-label="WhatsApp">
+      <svg width="28" height="28" viewBox="0 0 24 24"><path d="M20.52 3.48A11.88 11.88 0 0 0 12.06 0C5.43 0 .02 5.4.02 12.08c0 2.13.56 4.19 1.62 6.01L0 24l6.07-1.58a11.97 11.97 0 0 0 5.98 1.61h.01c6.63 0 12.04-5.4 12.04-12.08 0-3.22-1.26-6.25-3.58-8.47ZM12.06 22a10 10 0 0 1-5.1-1.4l-.37-.22-3.6.94.96-3.5-.24-.38a9.9 9.9 0 0 1-1.53-5.23c0-5.55 4.53-10.07 10.1-10.07 2.7 0 5.24 1.05 7.16 2.96a9.99 9.99 0 0 1 2.96 7.14c0 5.55-4.53 10.06-10.1 10.06Zm5.63-7.5c-.31-.16-1.83-.9-2.11-1-.28-.1-.48-.16-.68.16-.2.31-.79 1-.96 1.2-.18.2-.35.22-.66.08-.31-.16-1.3-.48-2.48-1.54-.92-.8-1.54-1.78-1.72-2.09-.18-.31-.02-.48.14-.63.14-.14.31-.36.46-.54.16-.18.2-.31.31-.51.1-.2.06-.38-.02-.54-.08-.16-.68-1.64-.93-2.25-.24-.58-.48-.5-.66-.5h-.57c-.2 0-.52.08-.79.38-.27.31-1.04 1.02-1.04 2.48s1.08 2.88 1.23 3.08c.16.2 2.1 3.2 5.08 4.48.71.31 1.26.49 1.7.62.72.22 1.38.19 1.9.12.58-.08 1.83-.75 2.09-1.48.26-.73.26-1.35.18-1.48-.08-.14-.28-.22-.58-.38Z"/></svg>
+    </a>
   </>)
 }

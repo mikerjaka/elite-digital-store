@@ -1,23 +1,35 @@
-import Link from 'next/link'
+
+import { useState } from 'react'
+import Drawer from './Drawer'
 import categories from '../data/categories.json'
+import Link from 'next/link'
+import config from '../config.json'
+
 export default function Header(){
-  return (<header style={{position:'sticky',top:0,backdropFilter:'blur(8px)',background:'rgba(10,10,12,.6)',borderBottom:'1px solid #1b1c1f',zIndex:50}}>
-    <div style={{maxWidth:1100,margin:'0 auto',padding:'12px 16px',display:'flex',justifyContent:'space-between',alignItems:'center'}}>
-      <div style={{display:'flex',alignItems:'center',gap:10}}>
-        <div style={{width:36,height:36,borderRadius:10,background:'#0c8b57',display:'grid',placeItems:'center',fontWeight:800}}>ED</div>
-        <div>
-          <div style={{fontWeight:800}}>Elite Digital</div>
-          <div style={{fontSize:12,opacity:.8}}>Tenemos diferentes plataformas streaming.</div>
+  const [open, setOpen] = useState(false)
+  return (<header className="header">
+    <div className="container header-in">
+      <div style={{display:'flex',alignItems:'center',gap:8}}>
+        <button className="btn" onClick={()=>setOpen(true)} aria-label="Abrir menú">☰</button>
+        <div className="brand">
+          <div className="logo">ED</div>
+          <div>
+            <div className="brand-name">Elite Digital</div>
+            <div className="tag">{config.tagline}</div>
+          </div>
         </div>
       </div>
-      <nav style={{display:'flex',gap:10,flexWrap:'wrap'}}>
-        <Link href="/">Inicio</Link>
-        <Link href="/tienda">Tienda</Link>
-        <Link href="/packs">Packs y Combos</Link>
+      <nav className="menu">
+        <Link className="btn" href="/">Inicio</Link>
+        <Link className="btn" href="/tienda">Tienda</Link>
+        <Link className="btn" href="/packs">Packs y Combos</Link>
       </nav>
     </div>
-    <div style={{maxWidth:1100,margin:'0 auto',padding:'0 16px 10px 16px',display:'flex',gap:8,flexWrap:'wrap'}}>
-      {categories.map(c => <Link key={c} href={`/tienda?cat=${encodeURIComponent(c)}`} style={{fontSize:12,border:'1px solid #1b1c1f',padding:'6px 8px',borderRadius:8}}>{c}</Link>)}
-    </div>
+    <Drawer open={open} onClose={()=>setOpen(false)}>
+      <h3 style={{marginTop:0}}>Categorías</h3>
+      {categories.map(c=>(
+        <Link key={c} className="cat" href={`/tienda?cat=${encodeURIComponent(c)}`} onClick={()=>setOpen(false)}>{c}</Link>
+      ))}
+    </Drawer>
   </header>)
 }

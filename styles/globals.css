@@ -1,1 +1,45 @@
-body{margin:0;background:#0b0b0c;color:#e6f2eb;font-family:system-ui, -apple-system, Segoe UI, Roboto}
+
+:root{--green:#0c8b57;--bg:#000;--card:#0b0b0b;--muted:#9aa7a0;--border:#151515;--text:#e9efe9}
+*{box-sizing:border-box} html,body,#__next{height:100%}
+body{margin:0;background:var(--bg);color:var(--text);font-family:ui-sans-serif,system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,Cantarell,Noto Sans,Arial}
+a{color:inherit;text-decoration:none}
+.container{max-width:1180px;margin:0 auto;padding:0 16px}
+.header{position:sticky;top:0;z-index:50;background:#000;border-bottom:1px solid var(--border)}
+.header-in{display:flex;align-items:center;justify-content:space-between;padding:10px 0;gap:12px}
+.brand{display:flex;align-items:center;gap:10px}
+.logo{width:36px;height:36px;border-radius:10px;background:var(--green);display:grid;place-items:center;font-weight:900;color:#04160e}
+.brand-name{font-weight:800;letter-spacing:.3px}
+.tag{font-size:12px;color:var(--muted);margin-top:-2px}
+.menu{display:flex;align-items:center;gap:8px}
+.btn{display:inline-flex;align-items:center;gap:8px;padding:10px 12px;border:1px solid var(--border);border-radius:10px;background:#0e0e0e;color:#dfeee7;cursor:pointer}
+.btn:hover{border-color:#2a2a2a}
+.btn.primary{background:var(--green);border-color:transparent;color:#fff;font-weight:800}
+.grid{display:grid;grid-template-columns:repeat(2,1fr);gap:12px}
+@media(min-width:860px){.grid{grid-template-columns:repeat(6,1fr)}}
+.card{border:1px solid var(--border);background:var(--card);border-radius:14px;overflow:hidden}
+.card img{width:100%;height:160px;object-fit:cover}
+.card-body{padding:10px}
+.price{display:flex;gap:8px;align-items:center}
+.price .now{font-weight:900}
+.price .old{opacity:.7;text-decoration:line-through;font-size:12px}
+.badge{font-size:10px;padding:3px 6px;border:1px solid var(--border);border-radius:999px}
+.section{padding:14px 0}
+h2.sec{font-size:15px;letter-spacing:.6px;color:#cfe7dc;margin:6px 0 12px}
+.catalog-cta{display:flex;justify-content:center;margin-top:12px}
+.whatsapp{position:fixed;right:16px;bottom:16px;width:58px;height:58px;border-radius:999px;background:#25D366;display:grid;place-items:center;box-shadow:0 10px 30px rgba(37,211,102,.35);z-index:60;border:1px solid #1b7f49}
+.whatsapp svg{fill:#042b13}
+.drawer{position:fixed;inset:0;z-index:70;display:none}
+.drawer.open{display:block}
+.backdrop{position:absolute;inset:0;background:#0008}
+.panel{position:absolute;left:0;top:0;bottom:0;width:290px;background:#0a0a0a;border-right:1px solid var(--border);padding:14px;overflow:auto}
+.cat{display:block;padding:8px 10px;border-radius:8px;border:1px solid var(--border);margin-bottom:8px;color:#dfeee7}
+.cat:hover{background:#101010}
+.slider{position:relative;overflow:hidden;border:1px solid var(--border);border-radius:16px}
+.track{display:flex;transition:transform .6s ease}
+.slide{min-width:100%;height:240px;background:#0f0f0f;display:grid;place-items:center;color:#95a39b}
+.controls{position:absolute;inset:0;display:flex;align-items:center;justify-content:space-between;padding:0 8px}
+.ctrl{background:#000c;border:1px solid #222;padding:8px;border-radius:999px;cursor:pointer}
+.dots{position:absolute;bottom:8px;left:0;right:0;display:flex;gap:6px;justify-content:center}
+.dot{width:8px;height:8px;border-radius:999px;background:#2a2a2a;border:1px solid #3a3a3a}
+.dot.active{background:var(--green);border-color:transparent}
+.stock{font-size:12px;color:#a6ffcf;margin-top:4px}
