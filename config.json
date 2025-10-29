@@ -1,0 +1,16 @@
+{
+  "siteName": "Elite Digital",
+  "tagline": "Tenemos diferentes plataformas streaming.",
+  "currency": "S/.",
+  "whatsapp": "+51946335004",
+  "yape": {
+    "number": "901027694",
+    "owner": "Luis M. Lino S."
+  },
+  "theme": {
+    "mode": "dark",
+    "primary": "#0c8b57",
+    "secondary": "#000000"
+  },
+  "secretAdminPath": "admin-elite-access"
+}

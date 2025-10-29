@@ -1,0 +1,452 @@
+[
+  {
+    "id": "p1",
+    "slug": "producto-1",
+    "title": "Producto destacado 1",
+    "category": "Streaming y Entretenimiento",
+    "price": 20.9,
+    "oldPrice": 30.9,
+    "stock": 297,
+    "featured": true,
+    "badge": null,
+    "discount": 15,
+    "cover": "https://picsum.photos/seed/elite1/640/400",
+    "short": "Acceso digital inmediato.",
+    "type": "streaming",
+    "content": [
+      {
+        "label": "¿Qué incluye?",
+        "value": "Acceso premium demo."
+      },
+      {
+        "label": "Garantía",
+        "value": "Reemplazo 24h"
+      }
+    ]
+  },
+  {
+    "id": "p2",
+    "slug": "producto-2",
+    "title": "Producto destacado 2",
+    "category": "Inteligencia Artificial",
+    "price": 21.9,
+    "oldPrice": 31.9,
+    "stock": 294,
+    "featured": true,
+    "badge": null,
+    "discount": 15,
+    "cover": "https://picsum.photos/seed/elite2/640/400",
+    "short": "Acceso digital inmediato.",
+    "type": "streaming",
+    "content": [
+      {
+        "label": "¿Qué incluye?",
+        "value": "Acceso premium demo."
+      },
+      {
+        "label": "Garantía",
+        "value": "Reemplazo 24h"
+      }
+    ]
+  },
+  {
+    "id": "p3",
+    "slug": "producto-3",
+    "title": "Producto destacado 3",
+    "category": "Edición y Creatividad",
+    "price": 22.9,
+    "oldPrice": 32.9,
+    "stock": 291,
+    "featured": true,
+    "badge": "🔥 Caliente",
+    "discount": 15,
+    "cover": "https://picsum.photos/seed/elite3/640/400",
+    "short": "Acceso digital inmediato.",
+    "type": "streaming",
+    "content": [
+      {
+        "label": "¿Qué incluye?",
+        "value": "Acceso premium demo."
+      },
+      {
+        "label": "Garantía",
+        "value": "Reemplazo 24h"
+      }
+    ]
+  },
+  {
+    "id": "p4",
+    "slug": "producto-4",
+    "title": "Producto destacado 4",
+    "category": "Fitness y Bienestar",
+    "price": 23.9,
+    "oldPrice": 33.9,
+    "stock": 288,
+    "featured": true,
+    "badge": null,
+    "discount": 30,
+    "cover": "https://picsum.photos/seed/elite4/640/400",
+    "short": "Acceso digital inmediato.",
+    "type": "streaming",
+    "content": [
+      {
+        "label": "¿Qué incluye?",
+        "value": "Acceso premium demo."
+      },
+      {
+        "label": "Garantía",
+        "value": "Reemplazo 24h"
+      }
+    ]
+  },
+  {
+    "id": "p5",
+    "slug": "producto-5",
+    "title": "Producto destacado 5",
+    "category": "Métodos y Paneles",
+    "price": 24.9,
+    "oldPrice": 34.9,
+    "stock": 285,
+    "featured": true,
+    "badge": null,
+    "discount": 15,
+    "cover": "https://picsum.photos/seed/elite5/640/400",
+    "short": "Acceso digital inmediato.",
+    "type": "streaming",
+    "content": [
+      {
+        "label": "¿Qué incluye?",
+        "value": "Acceso premium demo."
+      },
+      {
+        "label": "Garantía",
+        "value": "Reemplazo 24h"
+      }
+    ]
+  },
+  {
+    "id": "p6",
+    "slug": "producto-6",
+    "title": "Producto destacado 6",
+    "category": "Redes y Visibilidad",
+    "price": 25.9,
+    "oldPrice": 35.9,
+    "stock": 282,
+    "featured": true,
+    "badge": "🔥 Caliente",
+    "discount": 15,
+    "cover": "https://picsum.photos/seed/elite6/640/400",
+    "short": "Acceso digital inmediato.",
+    "type": "streaming",
+    "content": [
+      {
+        "label": "¿Qué incluye?",
+        "value": "Acceso premium demo."
+      },
+      {
+        "label": "Garantía",
+        "value": "Reemplazo 24h"
+      }
+    ]
+  },
+  {
+    "id": "p7",
+    "slug": "producto-7",
+    "title": "Producto destacado 7",
+    "category": "Ciberseguridad",
+    "price": 26.9,
+    "oldPrice": 36.9,
+    "stock": 279,
+    "featured": true,
+    "badge": null,
+    "discount": 15,
+    "cover": "https://picsum.photos/seed/elite7/640/400",
+    "short": "Acceso digital inmediato.",
+    "type": "streaming",
+    "content": [
+      {
+        "label": "¿Qué incluye?",
+        "value": "Acceso premium demo."
+      },
+      {
+        "label": "Garantía",
+        "value": "Reemplazo 24h"
+      }
+    ]
+  },
+  {
+    "id": "p8",
+    "slug": "producto-8",
+    "title": "Producto destacado 8",
+    "category": "Doxeos e Investigación",
+    "price": 27.9,
+    "oldPrice": 37.9,
+    "stock": 276,
+    "featured": true,
+    "badge": null,
+    "discount": 30,
+    "cover": "https://picsum.photos/seed/elite8/640/400",
+    "short": "Acceso digital inmediato.",
+    "type": "streaming",
+    "content": [
+      {
+        "label": "¿Qué incluye?",
+        "value": "Acceso premium demo."
+      },
+      {
+        "label": "Garantía",
+        "value": "Reemplazo 24h"
+      }
+    ]
+  },
+  {
+    "id": "p9",
+    "slug": "producto-9",
+    "title": "Producto destacado 9",
+    "category": "Multimedia",
+    "price": 28.9,
+    "oldPrice": 38.9,
+    "stock": 273,
+    "featured": true,
+    "badge": "🔥 Caliente",
+    "discount": 15,
+    "cover": "https://picsum.photos/seed/elite9/640/400",
+    "short": "Acceso digital inmediato.",
+    "type": "streaming",
+    "content": [
+      {
+        "label": "¿Qué incluye?",
+        "value": "Acceso premium demo."
+      },
+      {
+        "label": "Garantía",
+        "value": "Reemplazo 24h"
+      }
+    ]
+  },
+  {
+    "id": "p10",
+    "slug": "producto-10",
+    "title": "Producto destacado 10",
+    "category": "Cursos",
+    "price": 29.9,
+    "oldPrice": 39.9,
+    "stock": 270,
+    "featured": true,
+    "badge": null,
+    "discount": 15,
+    "cover": "https://picsum.photos/seed/elite10/640/400",
+    "short": "Acceso digital inmediato.",
+    "type": "streaming",
+    "content": [
+      {
+        "label": "¿Qué incluye?",
+        "value": "Acceso premium demo."
+      },
+      {
+        "label": "Garantía",
+        "value": "Reemplazo 24h"
+      }
+    ]
+  },
+  {
+    "id": "p11",
+    "slug": "producto-11",
+    "title": "Producto destacado 11",
+    "category": "Packs y Combos",
+    "price": 30.9,
+    "oldPrice": 40.9,
+    "stock": 267,
+    "featured": true,
+    "badge": null,
+    "discount": 15,
+    "cover": "https://picsum.photos/seed/elite11/640/400",
+    "short": "Acceso digital inmediato.",
+    "type": "streaming",
+    "content": [
+      {
+        "label": "¿Qué incluye?",
+        "value": "Acceso premium demo."
+      },
+      {
+        "label": "Garantía",
+        "value": "Reemplazo 24h"
+      }
+    ]
+  },
+  {
+    "id": "p12",
+    "slug": "producto-12",
+    "title": "Producto destacado 12",
+    "category": "Streaming y Entretenimiento",
+    "price": 31.9,
+    "oldPrice": 41.9,
+    "stock": 264,
+    "featured": true,
+    "badge": "🔥 Caliente",
+    "discount": 30,
+    "cover": "https://picsum.photos/seed/elite12/640/400",
+    "short": "Acceso digital inmediato.",
+    "type": "streaming",
+    "content": [
+      {
+        "label": "¿Qué incluye?",
+        "value": "Acceso premium demo."
+      },
+      {
+        "label": "Garantía",
+        "value": "Reemplazo 24h"
+      }
+    ]
+  },
+  {
+    "id": "p13",
+    "slug": "producto-13",
+    "title": "Producto destacado 13",
+    "category": "Inteligencia Artificial",
+    "price": 32.9,
+    "oldPrice": 42.9,
+    "stock": 261,
+    "featured": true,
+    "badge": null,
+    "discount": 15,
+    "cover": "https://picsum.photos/seed/elite13/640/400",
+    "short": "Acceso digital inmediato.",
+    "type": "streaming",
+    "content": [
+      {
+        "label": "¿Qué incluye?",
+        "value": "Acceso premium demo."
+      },
+      {
+        "label": "Garantía",
+        "value": "Reemplazo 24h"
+      }
+    ]
+  },
+  {
+    "id": "p14",
+    "slug": "producto-14",
+    "title": "Producto destacado 14",
+    "category": "Edición y Creatividad",
+    "price": 33.9,
+    "oldPrice": 43.9,
+    "stock": 258,
+    "featured": true,
+    "badge": null,
+    "discount": 15,
+    "cover": "https://picsum.photos/seed/elite14/640/400",
+    "short": "Acceso digital inmediato.",
+    "type": "streaming",
+    "content": [
+      {
+        "label": "¿Qué incluye?",
+        "value": "Acceso premium demo."
+      },
+      {
+        "label": "Garantía",
+        "value": "Reemplazo 24h"
+      }
+    ]
+  },
+  {
+    "id": "p15",
+    "slug": "producto-15",
+    "title": "Producto destacado 15",
+    "category": "Fitness y Bienestar",
+    "price": 34.9,
+    "oldPrice": 44.9,
+    "stock": 255,
+    "featured": true,
+    "badge": "🔥 Caliente",
+    "discount": 15,
+    "cover": "https://picsum.photos/seed/elite15/640/400",
+    "short": "Acceso digital inmediato.",
+    "type": "streaming",
+    "content": [
+      {
+        "label": "¿Qué incluye?",
+        "value": "Acceso premium demo."
+      },
+      {
+        "label": "Garantía",
+        "value": "Reemplazo 24h"
+      }
+    ]
+  },
+  {
+    "id": "p16",
+    "slug": "producto-16",
+    "title": "Producto destacado 16",
+    "category": "Métodos y Paneles",
+    "price": 35.9,
+    "oldPrice": 45.9,
+    "stock": 252,
+    "featured": true,
+    "badge": null,
+    "discount": 30,
+    "cover": "https://picsum.photos/seed/elite16/640/400",
+    "short": "Acceso digital inmediato.",
+    "type": "streaming",
+    "content": [
+      {
+        "label": "¿Qué incluye?",
+        "value": "Acceso premium demo."
+      },
+      {
+        "label": "Garantía",
+        "value": "Reemplazo 24h"
+      }
+    ]
+  },
+  {
+    "id": "p17",
+    "slug": "producto-17",
+    "title": "Producto destacado 17",
+    "category": "Redes y Visibilidad",
+    "price": 36.9,
+    "oldPrice": 46.9,
+    "stock": 249,
+    "featured": true,
+    "badge": null,
+    "discount": 15,
+    "cover": "https://picsum.photos/seed/elite17/640/400",
+    "short": "Acceso digital inmediato.",
+    "type": "streaming",
+    "content": [
+      {
+        "label": "¿Qué incluye?",
+        "value": "Acceso premium demo."
+      },
+      {
+        "label": "Garantía",
+        "value": "Reemplazo 24h"
+      }
+    ]
+  },
+  {
+    "id": "p18",
+    "slug": "producto-18",
+    "title": "Producto destacado 18",
+    "category": "Ciberseguridad",
+    "price": 37.9,
+    "oldPrice": 47.9,
+    "stock": 246,
+    "featured": true,
+    "badge": "🔥 Caliente",
+    "discount": 15,
+    "cover": "https://picsum.photos/seed/elite18/640/400",
+    "short": "Acceso digital inmediato.",
+    "type": "streaming",
+    "content": [
+      {
+        "label": "¿Qué incluye?",
+        "value": "Acceso premium demo."
+      },
+      {
+        "label": "Garantía",
+        "value": "Reemplazo 24h"
+      }
+    ]
+  }
+]
