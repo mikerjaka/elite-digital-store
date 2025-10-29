@@ -1,43 +1,45 @@
-// components/Header.js
-import { useState } from 'react'
-import Drawer from './Drawer'
-import categories from '../data/categories.json'
-import Link from 'next/link'
+import { useState } from "react";
+import { FiMenu, FiShoppingCart, FiSearch } from "react-icons/fi";
 
-export default function Header(){
-  const [open, setOpen] = useState(false)
+export default function Header() {
+  const [search, setSearch] = useState("");
 
   return (
-    <header className="header">
-      {/* Franja superior */}
-      <div className="topbar">
+    <header className="bg-black text-white py-4 shadow-lg">
+      {/* Texto superior */}
+      <div className="text-center text-sm text-gray-300 mb-1">
         ¡Streaming 24/7 sin interrupciones!
       </div>
 
-      {/* Bloque central estilo Noodle Store */}
-      <div className="hero-title">
-        <h1 className="brand-gradient">Elite Digital</h1>
+      {/* Logo principal */}
+      <div className="text-center font-extrabold text-3xl bg-gradient-to-r from-green-400 via-yellow-400 to-green-600 bg-clip-text text-transparent">
+        Elite Digital
       </div>
 
-      {/* Barra con menú hamburguesa + nav */}
-      <div className="container header-in">
-        <div style={{display:'flex',alignItems:'center',gap:8}}>
-          <button className="btn" onClick={()=>setOpen(true)} aria-label="Abrir menú">☰</button>
-          <nav className="menu">
-            <Link className="btn" href="/">Inicio</Link>
-            <Link className="btn" href="/tienda">Tienda</Link>
-            <Link className="btn" href="/packs">Packs y Combos</Link>
-          </nav>
+      {/* Barra de navegación */}
+      <div className="flex items-center justify-between px-4 mt-4">
+        {/* Menú de 3 líneas */}
+        <button className="text-2xl">
+          <FiMenu />
+        </button>
+
+        {/* Buscador */}
+        <div className="flex items-center bg-gray-900 rounded-full w-full mx-3 px-3 py-2 border border-gray-700">
+          <input
+            type="text"
+            placeholder="Buscar productos"
+            value={search}
+            onChange={(e) => setSearch(e.target.value)}
+            className="bg-transparent outline-none text-white placeholder-gray-400 flex-grow px-2 text-sm"
+          />
+          <FiSearch className="text-yellow-400 text-xl" />
         </div>
-      </div>
 
-      {/* Drawer de categorías (3 líneas a la izquierda) */}
-      <Drawer open={open} onClose={()=>setOpen(false)}>
-        <h3 style={{marginTop:0}}>Categorías</h3>
-        {categories.map(c=>(
-          <Link key={c} className="cat" href={`/tienda?cat=${encodeURIComponent(c)}`} onClick={()=>setOpen(false)}>{c}</Link>
-        ))}
-      </Drawer>
+        {/* Carrito */}
+        <button className="bg-green-600 rounded-full p-2 text-2xl">
+          <FiShoppingCart />
+        </button>
+      </div>
     </header>
-  )
+  );
 }
