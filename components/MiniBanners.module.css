@@ -8,7 +8,7 @@
 
 .track {
   display: flex;
-  animation: scroll 25s linear infinite;
+  animation: scroll 15s linear infinite;
 }
 
 .card {
