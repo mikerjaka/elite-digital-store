@@ -1,45 +1,103 @@
-import { useState } from "react";
-import { FiMenu, FiShoppingCart, FiSearch } from "react-icons/fi";
+// components/Header.js
+import React from "react";
+import { FaBars, FaSearch, FaShoppingCart } from "react-icons/fa";
 
 export default function Header() {
-  const [search, setSearch] = useState("");
-
   return (
-    <header className="bg-black text-white py-4 shadow-lg">
-      {/* Texto superior */}
-      <div className="text-center text-sm text-gray-300 mb-1">
-        ¡Streaming 24/7 sin interrupciones!
+    <header style={styles.header}>
+      {/* Menú y logo */}
+      <div style={styles.left}>
+        <FaBars size={22} style={styles.icon} />
+        <h1 style={styles.logo}>Elite Digital</h1>
       </div>
 
-      {/* Logo principal */}
-      <div className="text-center font-extrabold text-3xl bg-gradient-to-r from-green-400 via-yellow-400 to-green-600 bg-clip-text text-transparent">
-        Elite Digital
+      {/* Buscador */}
+      <div style={styles.searchBox}>
+        <input
+          type="text"
+          placeholder="Buscar productos..."
+          style={styles.input}
+        />
+        <FaSearch size={18} style={styles.searchIcon} />
       </div>
 
-      {/* Barra de navegación */}
-      <div className="flex items-center justify-between px-4 mt-4">
-        {/* Menú de 3 líneas */}
-        <button className="text-2xl">
-          <FiMenu />
-        </button>
-
-        {/* Buscador */}
-        <div className="flex items-center bg-gray-900 rounded-full w-full mx-3 px-3 py-2 border border-gray-700">
-          <input
-            type="text"
-            placeholder="Buscar productos"
-            value={search}
-            onChange={(e) => setSearch(e.target.value)}
-            className="bg-transparent outline-none text-white placeholder-gray-400 flex-grow px-2 text-sm"
-          />
-          <FiSearch className="text-yellow-400 text-xl" />
-        </div>
-
-        {/* Carrito */}
-        <button className="bg-green-600 rounded-full p-2 text-2xl">
-          <FiShoppingCart />
-        </button>
+      {/* Carrito */}
+      <div style={styles.cart}>
+        <FaShoppingCart size={22} style={styles.icon} />
       </div>
+
+      {/* --- Responsive inline CSS --- */}
+      <style jsx>{`
+        @media (max-width: 768px) {
+          header {
+            flex-direction: column;
+            align-items: stretch !important;
+            gap: 8px;
+          }
+          .searchBox {
+            max-width: 100% !important;
+            margin: 0;
+          }
+        }
+      `}</style>
     </header>
   );
 }
+
+const styles = {
+  header: {
+    display: "flex",
+    alignItems: "center",
+    justifyContent: "space-between",
+    padding: "12px 16px",
+    backgroundColor: "#0c0c0c",
+    color: "#fff",
+    boxShadow: "0 2px 6px rgba(0,0,0,0.4)",
+    position: "sticky",
+    top: 0,
+    zIndex: 100,
+    flexWrap: "wrap",
+  },
+  left: {
+    display: "flex",
+    alignItems: "center",
+    gap: "8px",
+  },
+  logo: {
+    fontSize: "1.2rem",
+    fontWeight: "700",
+    background: "linear-gradient(90deg, #00ff9d, #aaff00)",
+    WebkitBackgroundClip: "text",
+    WebkitTextFillColor: "transparent",
+    margin: 0,
+  },
+  searchBox: {
+    display: "flex",
+    alignItems: "center",
+    backgroundColor: "#1a1a1a",
+    borderRadius: "20px",
+    padding: "6px 12px",
+    flex: 1,
+    maxWidth: "320px",
+    margin: "0 12px",
+  },
+  input: {
+    flex: 1,
+    background: "transparent",
+    border: "none",
+    outline: "none",
+    color: "#fff",
+    fontSize: "0.95rem",
+  },
+  searchIcon: {
+    color: "#facc15",
+    cursor: "pointer",
+  },
+  cart: {
+    display: "flex",
+    alignItems: "center",
+  },
+  icon: {
+    cursor: "pointer",
+  },
+};
