@@ -1,20 +1,26 @@
 // components/MiniBanners.js
-export default function MiniBanners(){
-  const MINI = [
-    "https://upload.wikimedia.org/wikipedia/commons/7/75/Netflix_icon.svg",
-    "https://upload.wikimedia.org/wikipedia/commons/3/3e/Disney%2B_logo.svg",
-    "https://upload.wikimedia.org/wikipedia/commons/f/f1/Prime_Video.png",
-    "https://upload.wikimedia.org/wikipedia/commons/8/87/Crunchyroll_Logo.svg",
-  ]
+import React from "react";
+import styles from "./MiniBanners.module.css";
+
+const miniBanners = [
+  { id: 1, src: "https://i.imgur.com/Lb4HRtn.png", alt: "Netflix" },
+  { id: 2, src: "https://i.imgur.com/DfWSVLO.png", alt: "Disney+" },
+  { id: 3, src: "https://i.imgur.com/l6RQhzd.png", alt: "Prime Video" },
+  { id: 4, src: "https://i.imgur.com/K5J6Jc2.png", alt: "HBO Max" },
+  { id: 5, src: "https://i.imgur.com/AgzZyId.png", alt: "Crunchyroll" },
+  { id: 6, src: "https://i.imgur.com/EoT0i8d.png", alt: "Paramount+" },
+];
+
+export default function MiniBanners() {
   return (
-    <div className="mini-wrap">
-      <div className="mini-track">
-        {[...MINI, ...MINI].map((src,i)=>(
-          <div key={i} className="mini-card">
-            <img src={src} alt={`mini-${i}`} />
+    <div className={styles.scroller}>
+      <div className={styles.track}>
+        {miniBanners.concat(miniBanners).map((banner) => (
+          <div key={banner.id + Math.random()} className={styles.card}>
+            <img src={banner.src} alt={banner.alt} />
           </div>
         ))}
       </div>
     </div>
-  )
+  );
 }
