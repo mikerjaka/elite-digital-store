@@ -1,0 +1,37 @@
+.scroller {
+  overflow: hidden;
+  white-space: nowrap;
+  width: 100%;
+  background: transparent;
+  margin-bottom: 20px;
+}
+
+.track {
+  display: flex;
+  animation: scroll 25s linear infinite;
+}
+
+.card {
+  flex: 0 0 auto;
+  margin: 0 10px;
+  border-radius: 10px;
+  overflow: hidden;
+  background: #111;
+  box-shadow: 0 0 10px rgba(0, 255, 100, 0.3);
+}
+
+.card img {
+  width: 90px;
+  height: 90px;
+  object-fit: contain;
+  padding: 8px;
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
